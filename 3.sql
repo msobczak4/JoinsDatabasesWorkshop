@@ -1,5 +1,4 @@
 -- CROSS JOIN --
-.shell cls
 
 CREATE TABLE products (
     id INTEGER PRIMARY KEY,
@@ -13,10 +12,7 @@ CREATE TABLE discounts (
     discountName TEXT
 );
 
-.shell echo products
-SELECT * FROM products;
-.shell echo discounts
-SELECT * FROM discounts;
+
 
 INSERT INTO products (id, productName, price) VALUES
 (1, 'T-Shirt', 20),
@@ -31,6 +27,5 @@ INSERT INTO discounts (id, discount, discountName) VALUES
 (3,75,'75 % off'),
 (4,20,'20 % off');
 
-SELECT productName,discountName,price-(price*discount)/100 
-AS priceAfterDiscount FROM products
-CROSS JOIN discounts;
+SELECT * FROM products;
+SELECT * FROM discounts;

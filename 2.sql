@@ -1,5 +1,4 @@
 --SELF JOIN
-.shell cls
 
 CREATE TABLE employees (
     id INTEGER PRIMARY KEY,
@@ -15,20 +14,4 @@ INSERT INTO employees (id, name, manager_id) VALUES
 (5, 'Tomasz', 2),      
 (6, 'Agnieszka', 3);   
 
-.shell echo employees
 SELECT * FROM employees;
-
--- SELECT * 
--- FROM employees AS a
--- INNER JOIN employees AS b 
--- ON a.manager_id = b.id;
-
--- SELECT a.name, b.name
--- FROM employees AS a
--- INNER JOIN employees AS b 
--- ON a.manager_id = b.id;
-
-SELECT a.name AS employeeName, b.name AS managerName
-FROM employees AS a
-LEFT JOIN employees AS b 
-ON a.manager_id = b.id;

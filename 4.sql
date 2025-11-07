@@ -1,6 +1,4 @@
 -- NATURAL JOIN --
-.shell cls
-
 CREATE TABLE employee (
     EMP_ID INTEGER PRIMARY KEY,
     EMP_NAME TEXT,
@@ -26,16 +24,5 @@ INSERT INTO department (DEPT_NAME,MANAGER_NAME) VALUES
 ('FINANCE','ASNISH'),
 ('MARKETING','SAMAY');
 
-.shell echo employee
 SELECT * FROM employee;
-.shell echo department
 SELECT * FROM department;
-
-SELECT *
-FROM employee
-NATURAL JOIN department;
-
--- SELECT *
--- FROM employee
--- INNER JOIN department
--- using (DEPT_NAME);

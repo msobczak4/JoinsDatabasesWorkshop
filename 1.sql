@@ -5,7 +5,6 @@
 -- Opcjonalnie - drukowanie ładnych tabelek w sqlite = .mode table
 
 -- Zadanie 1 Wykorzystaj klauzule INNER JOIN -- LEFT JOIN -- RIGHT JOIN -- FULL OUTER JOIN
-.shell cls
 CREATE TABLE Klienci (
     imie TEXT,
     miasto TEXT,
@@ -29,17 +28,5 @@ INSERT INTO Zamowienia (klient_id, id, kwota) VALUES
 (2,103, 50),
 (4,104, 200);
 
-.shell echo Klienci
 SELECT * FROM Klienci;
-.shell echo Zamowienia
 SELECT * FROM Zamowienia;
-
---inner join jest defaultowym joinem
-.shell echo INNER JOIN
-SELECT * FROM Klienci INNER JOIN Zamowienia ON Klienci.id = Zamowienia.klient_id;
--- .shell echo LEFT JOIN
--- SELECT * FROM Klienci LEFT JOIN Zamowienia ON Klienci.id = Zamowienia.klient_id;
--- .shell echo RIGHT JOIN
--- SELECT * FROM Klienci RIGHT JOIN Zamowienia ON Klienci.id = Zamowienia.klient_id;
--- .shell echo FULL OUTER JOIN
--- SELECT * FROM Klienci FULL OUTER JOIN Zamowienia ON Klienci.id = Zamowienia.klient_id;
