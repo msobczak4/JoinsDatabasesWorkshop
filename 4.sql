@@ -1,0 +1,41 @@
+-- NATURAL JOIN --
+.shell cls
+
+CREATE TABLE employee (
+    EMP_ID INTEGER PRIMARY KEY,
+    EMP_NAME TEXT,
+    DEPT_NAME TEXT
+);
+
+CREATE TABLE department (
+    DEPT_NAME TEXT,
+    MANAGER_NAME TEXT
+);
+
+INSERT INTO employee (EMP_ID,EMP_NAME,DEPT_NAME) VALUES
+(1,'SUMIT','HR'),
+(2,'JOEL','IT'),
+(3,'BISWA','MARKETING'),
+(4,'VAIBHAV','IT'),
+(5,'SAGAR','SALES');
+
+INSERT INTO department (DEPT_NAME,MANAGER_NAME) VALUES
+('IT','ROHAN'),
+('SALES','RAHUL'),
+('HR','TANMAY'),
+('FINANCE','ASNISH'),
+('MARKETING','SAMAY');
+
+.shell echo employee
+SELECT * FROM employee;
+.shell echo department
+SELECT * FROM department;
+
+SELECT *
+FROM employee
+NATURAL JOIN department;
+
+-- SELECT *
+-- FROM employee
+-- INNER JOIN department
+-- using (DEPT_NAME);
