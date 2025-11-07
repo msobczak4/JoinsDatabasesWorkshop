@@ -1,4 +1,6 @@
 -- CROSS JOIN --
+-- Zadanie 3 Jako właściciel sklepu odzieżowego chcesz wprowadzić promocję na swoje produkty. 
+-- Oblicz ceny produktów dla wszystkich rodzajów obniżek.
 
 CREATE TABLE products (
     id INTEGER PRIMARY KEY,
@@ -11,8 +13,6 @@ CREATE TABLE discounts (
     discount INTEGER,
     discountName TEXT
 );
-
-
 
 INSERT INTO products (id, productName, price) VALUES
 (1, 'T-Shirt', 20),

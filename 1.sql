@@ -4,7 +4,7 @@
 -- https://www.sqlite.org/lang_select.html
 -- Opcjonalnie - drukowanie ładnych tabelek w sqlite = .mode table
 
--- Zadanie 1 Wykorzystaj klauzule INNER JOIN -- LEFT JOIN -- RIGHT JOIN -- FULL OUTER JOIN
+-- Zadanie 1 Połącz tabele Klienci i Zamówienia przy pomocy klauzul INNER JOIN, LEFT JOIN, RIGHT JOIN, FULL OUTER JOIN.
 CREATE TABLE Klienci (
     imie TEXT,
     miasto TEXT,

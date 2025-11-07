@@ -1,4 +1,6 @@
 -- NATURAL JOIN --
+-- Zadanie 4 Połącz tabele employee i department przy pomocy NATURAL JOIN. To samo wykonaj przy pomocy INNER JOIN oraz USING
+
 CREATE TABLE employee (
     EMP_ID INTEGER PRIMARY KEY,
     EMP_NAME TEXT,

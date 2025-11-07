@@ -1,4 +1,5 @@
 --SELF JOIN
+--Zadanie 2 Łącząc tabelę employees do tabeli employees, pokaż, kto jest czyim managerem.
 
 CREATE TABLE employees (
     id INTEGER PRIMARY KEY,
